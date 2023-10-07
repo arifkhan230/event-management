@@ -4,56 +4,56 @@
       "name": "Workshops and Webinars",
       "image": "https://i.ibb.co/ggHNJ4D/webinar-online-internet-website-web-page-concept.jpg",
       "description": "Our Workshops and Webinars service offers a diverse range of educational and training events aimed at enhancing skills and knowledge across various domains. From in-depth workshops on specific subjects to interactive webinars featuring industry experts, we provide a platform for continuous learning and professional development. Our workshops cover topics such as leadership, digital marketing, data science, and more. Attendees can engage with instructors, ask questions, and participate in hands-on exercises. Our webinars feature thought leaders discussing current trends and best practices in various industries. Whether you're a professional looking to upskill or an organization seeking to train your workforce, our Workshops and Webinars service has you covered. Join us and embark on a journey of lifelong learning.",
-      "pricing": "$199 - $599"
+      "price": "$599"
     },
     {
-      "id": 2,
+      "id": 2, 
       "name": "Career Fairs",
       "image": "https://i.ibb.co/QYrRN07/employee-career-word.jpg",
       "description": "Our Career Fairs provide a platform for job seekers and employers to connect and explore career opportunities. These events are ideal for recent graduates, professionals seeking new challenges, and employers looking to recruit top talent. Attendees can meet with representatives from leading companies, submit resumes, and participate in on-site interviews. Career development workshops and resume clinics are also part of the experience to help job seekers prepare for success. For employers, our Career Fairs offer a unique chance to showcase their organizations and connect with potential candidates. Whether you're a job seeker or an employer, our Career Fairs create a dynamic environment for networking and career advancement.",
-      "pricing": "Free for Job Seekers; Varies for Employers"
+      "price": "$250"
     },
     {
       "id": 3,
       "name": "Educational Conferences",
       "image": "https://i.ibb.co/6NJ3Y3R/cartography-connection-earth-world-map-concept.jpg",
       "description": "Our Educational Conferences bring together educators, researchers, and professionals from various fields to share knowledge and insights. These conferences cover a wide range of educational topics, including pedagogy, curriculum development, technology integration, and educational policy. Participants can attend keynote speeches, panel discussions, and workshops led by experts in the education sector. Networking opportunities abound, allowing attendees to connect with peers and collaborators. Educational Conferences are essential for staying updated on the latest trends and innovations in education. Whether you're an educator, researcher, or policymaker, our Educational Conferences provide a valuable platform for professional growth and collaboration.",
-      "pricing": "$299 - $799"
+      "price": "$799"
     },
     {
       "id": 4,
       "name": "Training Programs",
       "image": "https://i.ibb.co/KVPq5LG/online-data.jpg",
       "description": "Our Training Programs are designed to equip individuals and organizations with the skills and knowledge needed to excel in their respective fields. Whether it's technical training, leadership development, or specialized skills enhancement, our programs cover a wide spectrum. We offer both in-person and online training options, making learning accessible to all. Participants can choose from short courses, certification programs, and customized corporate training solutions. Our experienced trainers and subject-matter experts ensure that training is practical and aligned with industry standards. Whether you're a professional seeking career growth or an organization investing in employee development, our Training Programs are a pathway to success.",
-      "pricing": "$499 - $2,499"
+      "price": "$2,499"
     },
     {
       "id": 5,
       "name": "Trade Shows and Expos",
       "image": "https://i.ibb.co/FWR0VQM/business-entrepreneurship-marketing-plan-word.jpg",
       "description": "Our Trade Shows and Expos are industry-specific events that showcase the latest products, services, and innovations. These events are ideal for professionals and businesses looking to stay updated on market trends and network with industry leaders. Attendees can explore exhibits, attend product demos, and participate in networking sessions. From technology expos to trade shows in sectors like healthcare and finance, we offer a wide variety of opportunities for knowledge sharing and business growth. Whether you're a business owner, professional, or industry enthusiast, our Trade Shows and Expos provide a platform for collaboration and growth.",
-      "pricing": "Varies by Event"
+      "price": "$1999"
     },
     {
       "id": 6,
       "name": "Professional Development Events",
       "image": "https://i.ibb.co/KyfbNXL/development-growth-progress-icon-concept.jpg",
       "description": "Our Professional Development Events are tailored to help individuals enhance their skills and advance their careers. These events cover topics such as leadership, communication, project management, and more. Whether you're a recent graduate looking to kickstart your career or a seasoned professional aiming to refine your skills, our Professional Development Events offer valuable insights and practical knowledge. Participants can engage with experienced trainers and industry experts, attend workshops, and gain industry-specific certifications. Elevate your professional journey with our Professional Development Events and unlock new opportunities for growth and success.",
-      "pricing": "$199 - $599"
+      "price": "$599"
     },
     {
       "id": 7,
       "name": "Corporate Training",
       "image": "https://i.ibb.co/WfDq5hG/business-startup-strategy-goals-concept.jpg",
       "description": "Our Corporate Training services are designed to help organizations empower their workforce with the skills and expertise needed to drive business success. We offer customized training solutions tailored to the specific needs of each organization. Whether it's leadership training, technical skills development, or soft skills workshops, our corporate training programs ensure that employees are equipped to excel in their roles. Our experienced trainers work closely with organizations to identify training objectives and deliver programs that align with business goals. Invest in your team's professional development with our Corporate Training services and watch your organization thrive.",
-      "pricing": "Customized Quotes"
+      "price": "$2490"
     },
     {
       "id": 8,
       "name": "Online Learning Platforms",
       "image": "https://i.ibb.co/D7JGJyW/hands-working-digital-device-network-graphic-overlay.jpg",
       "description": "Our Online Learning Platforms provide a convenient and flexible way to access educational and training content. Whether you're an individual learner or an organization seeking to deliver online courses, our platforms offer a wide range of courses and resources. From video lectures and interactive quizzes to discussion forums and peer learning, our platforms foster engaging and effective online learning experiences. We cover a diverse array of subjects, including technology, business, health, and more. Individuals can choose from subscription-based plans, while organizations can leverage our platforms to create and deliver their own online courses. Embrace the future of education and training with our Online Learning Platforms.",
-      "pricing": "$19.99/month - Custom Enterprise Plans"
+      "price": "$1150"
     }
   ]
   

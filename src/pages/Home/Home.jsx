@@ -1,10 +1,14 @@
-import Navbar from "../../assets/Components/Navbar/Navbar";
+import Banner from "../../Components/Banner/Banner"
+import Services from "../../Components/Services/Services"
+import Footer from "../../Components/Footer/Footer"
 
 
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <Banner></Banner>
+            <Services></Services>
+            <Footer></Footer>
         </div>
     );
 };
