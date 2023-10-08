@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><NavLink to="/blog">Blog</NavLink></li>
         {
             user && <>
-            <li><NavLink to="/order">Order</NavLink></li>
+            <li><NavLink to="/upcomingEvent">Upcoming Event</NavLink></li>
             <li><NavLink to="/Dashboard">Dashboard</NavLink></li>
             </>
         }
@@ -29,7 +29,7 @@ const Navbar = () => {
             console.log(error)
         })
     }
-
+   
 
     return (
         <div className="navbar max-w-[1440px] mx-auto py-4">
@@ -55,7 +55,9 @@ const Navbar = () => {
             </div>
             
             <div className="navbar-end">
-            {
+                
+            { 
+                
                 user ? <>
                 <p className="text-bold text-xl mr-2">{user.displayName}</p>
                  <img className="w-[35px] h-[35px] rounded-full mr-2" src={user.photoURL ? user.photoURL : userLogo} alt="" />

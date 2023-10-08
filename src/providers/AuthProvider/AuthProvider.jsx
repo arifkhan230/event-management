@@ -43,7 +43,6 @@ const AuthProvider = ({children}) => {
             unSubscribe()
         }
     },[auth])
-    console.log(user)
 
     const authInfo={
        signInGoogle,

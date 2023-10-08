@@ -6,9 +6,9 @@ import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRout/PrivateRoute";
-import Order from "../Components/Order/order";
 import Blog from "../pages/Blog/Blog";
 import About from "../pages/About/About";
+import UpcomingEvent from "../Components/UpcomingEvent/UpcomingEvent";
 
 
 const router = createBrowserRouter([
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: '/order',
-                element: <Order></Order>
+                path: '/upcomingEvent',
+                element: <PrivateRoute><UpcomingEvent></UpcomingEvent></PrivateRoute>
             },
             {
                 path: '/blog',

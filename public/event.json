@@ -1,0 +1,61 @@
+{
+    "upcomingEvents": [
+      {
+        "id": 1,
+        "title": "Online Teacher Training Workshop",
+        "date": "2024-03-15",
+        "location": "Virtual",
+        "description": "Enhance your teaching skills with our online workshop. Learn effective online teaching strategies and engage with fellow educators."
+      },
+      {
+        "id": 2,
+        "title": "Student Success Seminar",
+        "date": "2024-04-10",
+        "location": "University Auditorium",
+        "description": "Explore strategies for enhancing student success in higher education. Join us for insightful discussions and workshops."
+      },
+      {
+        "id": 3,
+        "title": "Language Learning Symposium",
+        "date": "2024-05-20",
+        "location": "Language Institute",
+        "description": "Discover the latest trends in language learning. Exchange ideas and experiences with language educators."
+      },
+      {
+        "id": 4,
+        "title": "Educational Technology Conference",
+        "date": "2024-06-15",
+        "location": "Tech Expo Center",
+        "description": "Stay updated on cutting-edge educational technology. Explore new tools and strategies for the digital classroom."
+      },
+      {
+        "id": 5,
+        "title": "Mathematics Education Workshop",
+        "date": "2024-07-10",
+        "location": "Math Institute",
+        "description": "Deepen your knowledge of mathematics education. Engage in hands-on activities and share best practices."
+      },
+      {
+        "id": 6,
+        "title": "Early Childhood Education Summit",
+        "date": "2024-08-20",
+        "location": "Child Development Center",
+        "description": "Explore innovative approaches to early childhood education. Connect with experts and fellow educators."
+      },
+      {
+        "id": 7,
+        "title": "Art Education Conference",
+        "date": "2024-09-15",
+        "location": "Art Museum",
+        "description": "Celebrate the intersection of art and education. Learn about integrating art into various aspects of teaching."
+      },
+      {
+        "id": 8,
+        "title": "Literacy and Reading Symposium",
+        "date": "2024-10-10",
+        "location": "Library Auditorium",
+        "description": "Join us for a deep dive into literacy and reading education. Discover strategies for promoting a love of reading."
+      }
+    ]
+  }
+  

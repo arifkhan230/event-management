@@ -1,0 +1,60 @@
+{
+    "team": [
+        {
+            "id": 1,
+            "name": "Emily Johnson",
+            "title": "Director of Marketing",
+            "bio": "As our Director of Marketing, Emily is responsible for spreading the word about our transformative training events. With a background in digital marketing and a passion for education, she ensures that our programs reach the right audiences and make a lasting impact.",
+            "image": "https://i.ibb.co/3mvS6ht/front-view-woman-wearing-halal-outdoors-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Michael Chen",
+            "title": "Lead Instructional Designer",
+            "bio": "Michael leads our team of instructional designers in creating engaging and effective training content. With a deep understanding of learning design principles, he ensures that every program we deliver is of the highest quality.",
+            "image": "https://i.ibb.co/fXSztTz/office-happy-man-work.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Sarah Adams",
+            "title": "Customer Success Manager",
+            "bio": "Sarah is dedicated to ensuring that our clients have a seamless and exceptional experience with our training events. She works closely with clients to understand their needs and goals, providing support every step of the way.",
+            "image": "https://i.ibb.co/FYYt0BJ/medium-shot-smiley-woman-with-hijab.jpg"
+        },
+        {
+            "id": 4,
+            "name": "David Wilson",
+            "title": "Director of Operations",
+            "bio": "David Wilson oversees the logistics and operations of our training events. With a keen eye for detail and a commitment to efficiency, he ensures that every event runs smoothly and seamlessly.",
+            "image": "https://i.ibb.co/dMMdR5w/man-smiling-sitting.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Linda Parker",
+            "title": "Lead Facilitator",
+            "bio": "Linda Parker is our lead facilitator, responsible for delivering engaging and impactful training sessions. With extensive experience in adult education, she creates dynamic learning experiences that resonate with participants.",
+            "image": "https://i.ibb.co/dj2fxyz/portrait-beautiful-executive-businesswoman-smart-casual-wear-looking-camera-smiling-happy-modern-off.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Mark Turner",
+            "title": "Technology Specialist",
+            "bio": "Mark Turner is our technology specialist, dedicated to harnessing the latest ed-tech tools and platforms to enhance our training programs. His expertise ensures that our events are seamlessly integrated with technology for optimal learning experiences.",
+            "image": "https://i.ibb.co/ZMBKBLg/portrait-optimistic-businessman-formalwear.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Jennifer Davis",
+            "title": "Content Strategist",
+            "bio": "Jennifer Davis is our Content Strategist, responsible for developing and curating educational content for our training events. She has a passion for creating engaging and informative materials that enrich the learning experience.",
+            "image": "https://i.ibb.co/W37dwFL/medium-shot-gorgeous-girl-with-hijab-smiling-outside.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Robert Smith",
+            "title": "Finance Manager",
+            "bio": "Robert Smith manages our financial operations, ensuring the fiscal health of our organization. His expertise in financial management helps us maintain sustainable growth in the training event industry.",
+            "image": "https://i.ibb.co/CQB17h4/young-businessman-happy-expression.jpg"
+        }
+    ]
+}
