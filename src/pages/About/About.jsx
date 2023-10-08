@@ -27,7 +27,7 @@ const About = () => {
                 <h2 className="text-2xl font-bold text-center">Our Goals</h2>
             {
                 values.map(value => <div key={value.id}>
-                    <div className="flex items-center gap-2 mt-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-2 mt-4">
                         <h2 className="text-xl font-semibold">{value.title} :</h2>
                         <p>{value.description}</p>
                     </div>

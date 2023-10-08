@@ -5,7 +5,7 @@ import swal from 'sweetalert';
 
 const ServiceDetails = () => {
     const [findDetails, setFindDetails] = useState({})
-    const {name,description,image} = findDetails;
+    const {name,description,image,price} = findDetails;
     const services = useLoaderData();
     const { id } = useParams();
     const idInt = parseInt(id);
@@ -27,10 +27,10 @@ const ServiceDetails = () => {
     }
 
     return (
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] lg:mx-auto mb-20">
             <h2 className="text-4xl font-bold text-center my-10">Service Details</h2>
-            <div className="relative flex w-3/4 mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div className="relative m-0 w-full h-[50vh] shrink-0 overflow-hidden rounded-t-lg bg-white bg-clip-border text-gray-700">
+            <div className="relative flex lg:w-3/4 lg:mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                <div className="relative mx-4 lg:mx-0 lg:w-full h-[350px] shrink-0 overflow-hidden rounded-t-lg bg-white bg-clip-border text-gray-700">
                     <img
                         src={image  }
                         alt="image"
@@ -42,10 +42,11 @@ const ServiceDetails = () => {
                     <h4 className="mb-2 block text-2xl font-semibold">
                         {name}
                     </h4>
+                    <p className="text-blue-600 text-lg mb-4">Price : {price}</p>
                     <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                         {description}
                     </p>
-                        <button onClick={handleGetService} className="btn btn-info"> Get Service</button>
+                        <button onClick={handleGetService} className="btn bg-blue-600 text-white hover:bg-blue-400"> Get Service</button>
                 </div>
             </div>
 

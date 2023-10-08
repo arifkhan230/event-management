@@ -1,12 +1,12 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
 
-    const [success,setSuccess] = useState('')
-    const [registerError, setRegisterError] = useState('')
+    
 
     const {createUser} = useContext(AuthContext)
 
@@ -20,19 +20,18 @@ const Register = () => {
         console.log(name,email,photo,password,confirmPassword);
 
         // clear success and registerError 
-        setSuccess('')
-        setRegisterError('')
+        
 
         if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
-            setRegisterError('please provide a valid email')
+            toast.error('please provide a valid email')
         }
 
         if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)){
-            setRegisterError('Your password should have Minimum Six characters, at least one uppercase letter, one lowercase letter, one number and one special character:')
+            toast.error('Your password should have Minimum Six characters, at least one uppercase letter, one lowercase letter, one number and one special character:')
             return;
         }
         else if(password !== confirmPassword){
-            setRegisterError('password dosent match')
+            toast.error('password dosent match')
             return;
         }
 
@@ -44,7 +43,7 @@ const Register = () => {
         createUser(email,password)
         .then(result => {
             console.log(result.user)
-            setSuccess('You have registered successfully')
+            toast.success('You have registered successfully')
             updateProfile(result.user, {
                 displayName: `${name}`, photoURL: `${photo}`
             })
@@ -57,7 +56,7 @@ const Register = () => {
         })
         .catch(error=>{
             console.log(error)
-            setRegisterError(error.message)
+            toast.error(error.message)
         })
 
     }
@@ -65,6 +64,7 @@ const Register = () => {
 
     return (
         <div className="max-w-[1440px] flex justify-center mx-auto mt-20 mb-10">
+            <Toaster/>
             <div className="card flex-shrink-0 lg:w-2/5 border rounded-none shadow-xl py-6 ">
                 <h2 className="text-4xl font-bold text-blue-400 text-center p-4">Register Now!</h2>
                 <form onSubmit={handleRegister} className="card-body ">
@@ -114,12 +114,7 @@ const Register = () => {
                         <button className="btn hover:bg-blue-400 bg-blue-600 text-white">Register</button>
                     </div>
                     <div className='mt-4'>
-                        {
-                            setSuccess && <p className='text-green-600'>{success}</p>
-                        }
-                        {
-                            registerError && <p className='text-red-400'>{registerError}</p>
-                        }
+                       
                     </div>
                    
                     <p className="text-lg font-medium mt-4">Already have an account? Please <Link to="/login" className="text-blue-800 underline">Login</Link></p>

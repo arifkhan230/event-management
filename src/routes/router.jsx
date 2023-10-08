@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRout/PrivateRoute";
 import Blog from "../pages/Blog/Blog";
 import About from "../pages/About/About";
 import UpcomingEvent from "../Components/UpcomingEvent/UpcomingEvent";
+import Profile from "../Components/Profile/Profile";
 
 
 const router = createBrowserRouter([
@@ -36,7 +37,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/upcomingEvent',
-                element: <PrivateRoute><UpcomingEvent></UpcomingEvent></PrivateRoute>
+                element: <PrivateRoute><UpcomingEvent></UpcomingEvent></PrivateRoute>,
+                loader:()=> fetch('/event.json')
             },
             {
                 path: '/blog',
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
                 path: '/about',
                 element:<About></About>,
                 loader: ()=> fetch('/about.json')
+            },
+            {
+                path: '/profile',
+                element:<PrivateRoute><Profile></Profile></PrivateRoute>
             }
         ]
     }

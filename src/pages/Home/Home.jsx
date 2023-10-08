@@ -5,7 +5,9 @@ import RecentEvent from "../../Components/RecentEvent/RecentEvent";
 import Team from "../../Components/Team/Team";
 
 
+
 const Home = () => {
+
     return (
         <div>
             <Banner></Banner>

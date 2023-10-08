@@ -8,13 +8,13 @@ const Navbar = () => {
     const {user,logOut} = useContext(AuthContext)
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li className="font-semibold"><NavLink to="/">Home</NavLink></li>
+        <li className="font-semibold"><NavLink to="/about">About</NavLink></li>
+        <li className="font-semibold"><NavLink to="/blog">Blog</NavLink></li>
         {
             user && <>
-            <li><NavLink to="/upcomingEvent">Upcoming Event</NavLink></li>
-            <li><NavLink to="/Dashboard">Dashboard</NavLink></li>
+            <li className="font-semibold"><NavLink to="/upcomingEvent">Upcoming Event</NavLink></li>
+            <li className="font-semibold"><NavLink to="/profile">Profile</NavLink></li>
             </>
         }
     </>
@@ -32,7 +32,7 @@ const Navbar = () => {
    
 
     return (
-        <div className="navbar max-w-[1440px] mx-auto py-4">
+        <div className="navbar max-w-[1440px] lg:px-0 lg:mx-auto  py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">ET EVENTS</a>
+                <a className="btn btn-ghost normal-case lg:text-3xl">ET <span className="text-blue-600">EVENTS</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -61,9 +61,9 @@ const Navbar = () => {
                 user ? <>
                 <p className="text-bold text-xl mr-2">{user.displayName}</p>
                  <img className="w-[35px] h-[35px] rounded-full mr-2" src={user.photoURL ? user.photoURL : userLogo} alt="" />
-                 <button onClick={handleLogOut} className="btn btn-sm btn-info">LogOut</button>
+                 <button onClick={handleLogOut} className="btn btn-sm text-white bg-blue-600 hover:bg-blue-400">LogOut</button>
                 </> :
-                <Link to="/login"><button className="btn btn-sm btn-info">Login</button></Link>
+                <Link to="/login"><button className="btn text-white btn-sm bg-blue-600 hover:bg-blue-400 ">Login</button></Link>
             }
                 
             </div>

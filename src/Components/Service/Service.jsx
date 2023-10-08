@@ -2,10 +2,15 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 const Service = ({ service }) => {
     const {id,name, image,price, description } = service;
+
+    
+
+
     return (
-        <div className="card card-compact rounded-b-none rounded-t-sm border-2 bg-base-100">
+        <div className="card card-compact rounded-b-none rounded-t-sm border-2 bg-base-100 mx-4 lg:mx-0">
             <figure><img className='h-[250px] object-cover w-full' src={image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>

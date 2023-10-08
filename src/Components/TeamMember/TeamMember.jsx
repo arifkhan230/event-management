@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TeamMember = ({ member }) => {
     console.log(member)
     return (
-        <div className='border-2'>
+        <div className='border-2 mx-4 lg:mx-0'>
             <div className='h-[300px] w-full'>
                 <img className='w-full h-full object-cover  ' src={member.image} alt="" />
             </div>

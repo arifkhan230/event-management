@@ -1,14 +1,18 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import google from '../../assets/google.png'
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
+import  toast, { Toaster } from "react-hot-toast";
+
 
 
 const Login = () => {
+    const navigate = useNavigate();
 
-    const [success, setSuccess] = useState('')
-    const [logInError, setLogInError] = useState('')
-    const navigate = useNavigate()
+    const location = useLocation()
+    console.log(location)
+
+    
 
     const { signInGoogle, logIn } = useContext(AuthContext);
 
@@ -20,12 +24,12 @@ const Login = () => {
         signInGoogle()
             .then(result => {
                 console.log(result.user)
-                setSuccess('You have logged in successfully')
+                toast.success('You have logged in successfully')
                 navigate('/')
             })
             .catch(error => {
                 console.log(error)
-                setLogInError(error.message)
+                toast.error(error.message)
             })
     }
 
@@ -35,26 +39,29 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
-        // reset event and states
-        setSuccess('')
-        setLogInError('')
+        // reset event
+        
         e.target.reset()
 
         // login with email password
         logIn(email, password)
             .then(result => {
                 console.log(result.user)
-                setSuccess('You have logged in successfully')
-                navigate('/')
+                toast.success('You have logged in successfully')
+                navigate(location?.state? location.state : '/')
             })
             .catch(error => {
                 console.log(error)
-                setLogInError(error.message)
+                toast.error(error.message)
+                
             })
 
     }
     return (
         <div className="max-w-[1440px] flex justify-center mx-auto mt-20">
+            
+            <Toaster/>
+           
             <div className="card flex-shrink-0 lg:w-2/5 border rounded-none shadow-xl py-6 ">
                 <h2 className="text-4xl font-bold text-blue-400 text-center p-4">Login Now!</h2>
                 <form onSubmit={handleLogIn} className="card-body ">
@@ -68,6 +75,7 @@ const Login = () => {
                             required />
                     </div>
                     <div className="form-control">
+                    
 
                         <input
                             type="password"
@@ -82,14 +90,7 @@ const Login = () => {
                     <div className="form-control">
                         <button className="btn bg-blue-400">Login</button>
                     </div>
-                    <div className="mt-4">
-                        {
-                            success && <p className="text-green-600">{success}</p>
-                        }
-                        {
-                            logInError && <p className="text-red-400">{logInError}</p>
-                        }
-                    </div>
+                    
                     <div className="flex flex-col items-center  mt-4 gap-4 ">
                         <div onClick={handleGoogle} className="flex items-center border-2 rounded-full w-3/4  p-2">
                             <img className="w-[30px]" src={google} alt="" />
@@ -98,6 +99,7 @@ const Login = () => {
                     </div>
                     <p className="text-lg font-medium text-center mt-4">Do not have an account? Please <Link to="/register" className="text-blue-800 underline">Register</Link></p>
                 </form>
+                
             </div>
         </div>
     );
