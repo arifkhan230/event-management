@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import google from '../../assets/google.png'
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
@@ -8,6 +8,7 @@ const Login = () => {
 
     const [success, setSuccess] = useState('')
     const [logInError, setLogInError] = useState('')
+    const navigate = useNavigate()
 
     const { signInGoogle, logIn } = useContext(AuthContext);
 
@@ -20,6 +21,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 setSuccess('You have logged in successfully')
+                navigate('/')
             })
             .catch(error => {
                 console.log(error)
@@ -43,6 +45,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user)
                 setSuccess('You have logged in successfully')
+                navigate('/')
             })
             .catch(error => {
                 console.log(error)
