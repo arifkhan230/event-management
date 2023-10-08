@@ -1,13 +1,28 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
+import userLogo from "../../assets/profile-user.png"
 
 
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext)
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
     </>
+
+    const handleLogOut = () =>{
+        console.log('click hoisi')
+        logOut()
+        .then(result =>{
+            console.log(result)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
+    }
 
 
     return (
@@ -32,8 +47,17 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
+            
             <div className="navbar-end">
-                <Link to="/login"><button className="btn btn-info">Login</button></Link>
+            {
+                user ? <>
+                <p className="text-bold text-xl mr-2">{user.displayName}</p>
+                 <img className="w-[35px] h-[35px] rounded-full mr-2" src={user.photoURL ? user.photoURL : userLogo} alt="" />
+                 <button onClick={handleLogOut} className="btn btn-sm btn-info">LogOut</button>
+                </> :
+                <Link to="/login"><button className="btn btn-sm btn-info">Login</button></Link>
+            }
+                
             </div>
         </div>
     );

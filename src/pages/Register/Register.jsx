@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 
 const Register = () => {
 
@@ -26,8 +27,8 @@ const Register = () => {
             setRegisterError('please provide a valid email')
         }
 
-        if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password)){
-            setRegisterError('Your password should have Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:')
+        if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)){
+            setRegisterError('Your password should have Minimum Six characters, at least one uppercase letter, one lowercase letter, one number and one special character:')
             return;
         }
         else if(password !== confirmPassword){
@@ -44,6 +45,15 @@ const Register = () => {
         .then(result => {
             console.log(result.user)
             setSuccess('You have registered successfully')
+            updateProfile(result.user, {
+                displayName: `${name}`, photoURL: `${photo}`
+            })
+            .then(result=> {
+                console.log(result)
+            })
+            .catch(error=>{
+                console.log(error)
+            })
         })
         .catch(error=>{
             console.log(error)

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import swal from 'sweetalert';
 
@@ -15,6 +15,7 @@ const ServiceDetails = () => {
 
         if (findService) {
             setFindDetails(findService)
+            
         }
     }, [services, idInt])
     console.log(findDetails)
