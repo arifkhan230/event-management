@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Write your explanation here : This code will give an referenceError, because greeting var misspelled as greetign. javascript is case sensitive program. if code misspelled code will not work.   </i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Write your explanation here : The correct answer is "12". because parameter 1 is number and parameter 2 is string we cant add a number with string. if we try to add number and string they will be concatenate themselves. But some time we concatenate number and string for making a meaningful string . </i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Write your explanation here: The right answer is A. Because in this code the value of food was unchanged. Variable info reassigned value after getting the value by index from food variable. but the food variable still the same. because info variable just read or get the data from food variable that do not make any changes in food variable. </i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Write your explanation here: The answer is B because when the sayHi function called it didn't pass any argument. thats why function did'nt read the value of name, when a we declaire something and its value is missing it will return undefine.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Write your explanation here: Answer is C . because after applying forEach method each time we got  a num from nums array. after that if num is true we added 1 to with count. the first num 0 was false thats why condition wasn't filled. after that we added count + 1 = 1, before nums.length was finished. and got answer 3.  </i>
 
 </p>
 </details>
