@@ -10,13 +10,9 @@ const Login = () => {
     const navigate = useNavigate();
 
     const location = useLocation()
-    console.log(location)
-
-    
 
     const { signInGoogle, logIn } = useContext(AuthContext);
 
-    // clear success and error
 
 
     // sign with google

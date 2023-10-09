@@ -19,7 +19,7 @@ const Team = () => {
     },[])
 
 
-    console.log(team)
+   
     return (
         <div className="mt-20 max-w-[1440px] mx-auto">
             <h2 className="text-4xl font-bold text-center mb-10">Our Team</h2>

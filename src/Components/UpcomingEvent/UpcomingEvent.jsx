@@ -4,7 +4,7 @@ import EventCard from "./EventCard/EventCard";
 
 const UpcomingEvent = () => {
     const { upcomingEvents } = useLoaderData()
-    console.log(upcomingEvents)
+   
     return (
         <div className="max-w-[1440px] mx-auto mt-12 mb-20">
             <h2 className='text-4xl font-bold text-center mb-8'>Upcoming events</h2>

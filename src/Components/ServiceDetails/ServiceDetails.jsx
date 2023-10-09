@@ -18,7 +18,7 @@ const ServiceDetails = () => {
             
         }
     }, [services, idInt])
-    console.log(findDetails)
+  
 
     const handleGetService =()=>{
         swal("Good job!", "You have successfully purchased our service!", "success", {

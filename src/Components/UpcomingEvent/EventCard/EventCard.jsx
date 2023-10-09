@@ -9,7 +9,7 @@ const EventCard = ({ singleEvent }) => {
     useEffect(()=>{
         AOS.init();
     },[])
-    console.log(singleEvent)
+   
     const handleBookNow =()=>{
         swal("Congratulations!", "You Successfully booked this event!", "success");
 
