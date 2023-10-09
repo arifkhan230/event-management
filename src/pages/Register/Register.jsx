@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
-import { updateProfile } from 'firebase/auth';
+import {  updateProfile } from 'firebase/auth';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
@@ -19,7 +19,8 @@ const Register = () => {
         const confirmPassword = e.target.confirmPassword.value;
         console.log(name,email,photo,password,confirmPassword);
 
-        // clear success and registerError 
+        // reset field
+        e.target.reset()
         
 
         if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
@@ -35,8 +36,7 @@ const Register = () => {
             return;
         }
 
-        // reset field
-        e.target.reset()
+        
         
         
         // create user with email password
@@ -48,6 +48,7 @@ const Register = () => {
                 displayName: `${name}`, photoURL: `${photo}`
             })
             .then(result=> {
+                window.location.reload()
                 console.log(result)
             })
             .catch(error=>{

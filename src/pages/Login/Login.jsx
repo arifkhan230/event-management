@@ -58,12 +58,12 @@ const Login = () => {
 
     }
     return (
-        <div className="max-w-[1440px] flex justify-center mx-auto mt-20">
+        <div className="max-w-[1440px] flex justify-center lg:mx-auto mt-20">
             
             <Toaster/>
            
-            <div className="card flex-shrink-0 lg:w-2/5 border rounded-none shadow-xl py-6 ">
-                <h2 className="text-4xl font-bold text-blue-400 text-center p-4">Login Now!</h2>
+            <div className="card flex-shrink-0  lg:w-2/5 border rounded-none shadow-xl py-6 ">
+                <h2 className="text-2xl lg:text-4xl font-bold text-blue-400 text-center p-4">Login Now!</h2>
                 <form onSubmit={handleLogIn} className="card-body ">
                     <div className="form-control">
 
